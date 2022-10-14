@@ -1,0 +1,10 @@
+/*Color Change Animation*/
+@keyframes title-color-change {
+    0% {color: var(--color1)}
+    32% {color: var(--color1)}
+    33% {color: var(--color2)}
+    65% {color: var(--color2)}
+    66% {color: var(--color3)}
+    99% {color: var(--color3)}
+    100% {color: var(--color1)}
+}

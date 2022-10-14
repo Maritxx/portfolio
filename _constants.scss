@@ -1,0 +1,34 @@
+/*Colors*/
+$purple-primary: #7D84B2; 
+$green-primary: #8CA861;
+$yellow-primary: #FED766;
+$offwhite-bg: #f2f1f7;
+
+
+/*Fonts*/
+$spectral: 'Spectral', 'Georgia', serif;
+$rubik: 'Rubik', 'Arial', sans-serif;
+
+
+/*Mixins*/
+@mixin sectionWidth($maxWidth) {
+    position: relative;
+    width: 100%;
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+/*Common widths: 1440px, 1200px, 1080px, 960px, 840px, 720px, 600px*/
+
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

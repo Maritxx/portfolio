@@ -1,0 +1,362 @@
+/*CSS Reset code*/
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, em, img, i, center, ol, ul, li, fieldset, form, label, figure, figcaption, footer, header, nav, section, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+  word-wrap: break-word;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+button {
+  outline: 0;
+  color: inherit;
+}
+
+q {
+  display: inline;
+  font-style: italic;
+}
+
+textarea, input[type=text], input[type=button], input[type=submit], input[type=reset], input[type=search], input[type=password] input[type=number], input[type=email] {
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  border-radius: 0;
+  border: 2px solid transparent;
+  outline: none;
+  resize: none;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Colors*/
+/*Fonts*/
+/*Mixins*/
+/*Common widths: 1440px, 1200px, 1080px, 960px, 840px, 720px, 600px*/
+/*Color Change Animation*/
+@keyframes title-color-change {
+  0% {
+    color: var(--color1);
+  }
+  32% {
+    color: var(--color1);
+  }
+  33% {
+    color: var(--color2);
+  }
+  65% {
+    color: var(--color2);
+  }
+  66% {
+    color: var(--color3);
+  }
+  99% {
+    color: var(--color3);
+  }
+  100% {
+    color: var(--color1);
+  }
+}
+/*Importing stylesheets*/
+/*Global Styles*/
+body {
+  font-family: "Spectral", "Georgia", serif;
+}
+
+.responsiveImg {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+/*Font Styles*/
+h1 {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 1.85rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/*Header*/
+header {
+  background-color: #8CA861;
+  font-family: "Rubik", "Arial", sans-serif;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+header .header-content__holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 45px;
+}
+header .header-content__holder .header-logo__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .header-content__holder .header-logo__container--img {
+  max-width: 40px;
+  max-height: 40px;
+}
+@media screen and (min-width: 768px) {
+  header .header-content__holder .mobile-navigation__holder {
+    display: none;
+  }
+}
+header .header-content__holder .desktop-navigation__holder {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .header-content__holder .desktop-navigation__holder {
+    display: block;
+  }
+}
+header .header-content__holder .desktop-navigation__holder ul {
+  display: flex;
+  gap: 30px;
+}
+
+/*Hero Intro section*/
+.hero-content__holder {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hero-content__holder {
+    display: flex;
+    gap: 30px;
+  }
+}
+.hero-content__holder--text {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+}
+.hero-content__holder--text .hero-name {
+  display: inline-block;
+  font-weight: 500;
+  width: 100%;
+}
+.hero-content__holder--text .hero-title {
+  font-weight: 500;
+  animation: title-color-change 5s linear infinite;
+}
+.hero-content__holder--text .hero-title--one {
+  --color1: #7d84b2;
+  --color2: #8ca861;
+  --color3: #fed766;
+}
+.hero-content__holder--text .hero-title--two {
+  --color1: #fed766;
+  --color2: #7d84b2;
+  --color3: #8ca861;
+}
+.hero-content__holder--img {
+  flex: 0 1 50%;
+}
+
+/*About Section*/
+.about__section {
+  background-color: #f2f1f7;
+}
+.about__section .about-content__holder {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.about__section .about-content__holder .about-info__holder h3 {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about__section .about-content__holder .about-info__holder {
+    display: flex;
+    gap: 75px;
+  }
+}
+.about__section .about-content__holder .about-info__holder--text {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .about__section .about-content__holder .about-info__holder--text {
+    flex: 0 1 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__section .about-content__holder .about-info__holder--skills {
+    flex: 0 1 40%;
+  }
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid var(--icon-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container i {
+  font-size: 1.5rem;
+  color: var(--icon-color);
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container span {
+  font-weight: 500;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--html {
+  --icon-color: #ce441e;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--css {
+  --icon-color: #254bdd;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--js {
+  --icon-color: #e2c430;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--react {
+  --icon-color: #5ed3f3;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--github {
+  --icon-color: #000000;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--git {
+  --icon-color: #f05030;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--sass {
+  --icon-color: #c96195;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--wordpress {
+  --icon-color: #207196;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--accessibility {
+  --icon-color: #005a9d;
+}
+.about__section .about-content__holder .about-info__holder--skills .about-skills__holder .skill__container--responsive {
+  --icon-color: #6f7378;
+}
+
+/*Projects Section*/
+.projects-content__holder {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .projects-content__holder .project-preview__container {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-content__holder .project-preview__container--reverse {
+    flex-direction: row-reverse;
+  }
+}
+.projects-content__holder .project-preview__container--img {
+  flex: 0 1 60%;
+}
+.projects-content__holder .project-preview__container--text {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .projects-content__holder .project-preview__container--text {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.projects-content__holder .project-preview__container--text .project-buttons__holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.projects-content__holder .project-preview__container--text .project-buttons__holder a {
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #7D84B2;
+  color: white;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*Contact Section*/
+/*Footer*/
+
+/*# sourceMappingURL=style.css.map */
