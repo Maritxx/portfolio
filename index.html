@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header> <!--Needs to be fixed-->
         <div class="header-content__holder">
             <div class="header-logo__container">
                 <div class="header-logo__container--img">
@@ -91,7 +91,7 @@
                         <p>I'm available to work on freelance projects and would also love to hear about any other job opportunities. 
                              If you think that you might have a project for me, feel free to reach out!</p>
                         <div class="button">
-                            <a href="#">Contact me here!</a>
+                            <a href="#contact">Contact me here!</a>
                         </div>
                     </div>
                     <div class="about-info__holder--skills">
@@ -147,8 +147,8 @@
         <section class="projects__section" id="projects">
             <div class="projects-content__holder">
                 <h2>Projects</h2>
+                <hr class="title__hr">
                 <span>This is a showcase of projects I've been working on. </span>
-                <hr>
                 <div class="project-previews__holder">
                     <div class="project-preview__container">
                         <div class="project-preview__container--img">
@@ -206,12 +206,12 @@
         <section class="contact__section" id="contact">
             <div class="contact-content__holder">
                 <h2>Contact</h2>
+                <hr class="title__hr">
                 <span>You can get in contact with me by filling in the form below. I will get back to you as soon as possible!</span>
-                <hr>
                 <form class="contact__form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Message"></textarea>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button type="submit">Send Message</button>
                 </form>
             </div>

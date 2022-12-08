@@ -107,6 +107,12 @@ body {
   width: 100%;
 }
 
+.title__hr {
+  width: 7%;
+  border: 2px solid #8CA861;
+  margin: 10px auto;
+}
+
 /*Font Styles*/
 h1 {
   font-family: "Rubik", "Arial", sans-serif;
@@ -249,6 +255,14 @@ header .header-content__holder .desktop-navigation__holder ul {
     flex: 0 1 60%;
   }
 }
+.about__section .about-content__holder .about-info__holder--text .button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #7D84B2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
 @media screen and (min-width: 768px) {
   .about__section .about-content__holder .about-info__holder--skills {
     flex: 0 1 40%;
@@ -318,15 +332,11 @@ header .header-content__holder .desktop-navigation__holder ul {
   display: block;
   text-align: center;
 }
-.projects-content__holder hr {
-  width: 5%;
-  border: 2px solid #8CA861;
-  margin-bottom: 30px;
-}
 .projects-content__holder .project-previews__holder {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-top: 30px;
 }
 .projects-content__holder .project-previews__holder .project-preview__container {
   display: flex;
@@ -383,23 +393,43 @@ header .header-content__holder .desktop-navigation__holder ul {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 15px 90px 15px;
+}
+.contact__section .contact-content__holder h2, .contact__section .contact-content__holder span {
+  display: block;
+  text-align: center;
 }
 .contact__section .contact-content__holder .contact__form {
   max-width: 600px;
   width: 100%;
-  margin: 0 auto;
+  margin: 30px auto 0px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-.contact__section .contact-content__holder .contact__form input, .contact__section .contact-content__holder .contact__form textarea {
+.contact__section .contact-content__holder .contact__form input {
   width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px #FED766;
+}
+.contact__section .contact-content__holder .contact__form textarea {
+  width: 100%;
+  resize: none;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px #FED766;
 }
 .contact__section .contact-content__holder .contact__form button {
   display: inline-flex;
   align-self: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #7D84B2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 /*Footer*/
