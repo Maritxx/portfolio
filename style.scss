@@ -235,50 +235,70 @@ header {
 
 /*Projects Section*/
 .projects-content__holder {
-    @include c.sectionWidth(1200px);
+    @include c.sectionWidth(1080px);
     padding: 15px;
 
-    .project-preview__container {
-        @include c.tablet { 
-            display: flex;
-            align-items: center;
-            gap: 75px;
-        }
+    h2, span {
+        display: block;
+        text-align: center;
+    }
 
-        &--reverse {
-            @include c.tablet { 
-                flex-direction: row-reverse;
-            }
-        }
+    hr {
+        width: 5%;
+        border: 2px solid c.$green-primary;
+        margin-bottom: 30px;
+    }
 
-        &--img {
-            flex: 0 1 60%;
-        }
+    .project-previews__holder {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
 
-        &--text {
-            flex: 0 1 40%;
+        .project-preview__container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 20px;
+            gap: 15px;
 
             @include c.tablet { 
-                align-items: flex-start;
-                text-align: left;
+                flex-direction: row;
+                align-items: center;
+                gap: 75px;
             }
 
-            .project-buttons__holder {
+            &--img {
+                flex: 0 1 60%;
+
+                img {
+                    max-width: 450px;
+                    margin: 0 auto;
+                }
+            }
+
+            &--text {
+                flex: 0 1 40%;
                 display: flex;
-                flex-wrap: wrap;
-                gap: 15px;
-                
-                a {
-                    padding: 10px 10px;
-                    border-radius: 10px;
-                    background-color: c.$purple-primary;
-                    color: white;
-                    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+
+                @include c.tablet { 
+                    align-items: flex-start;
+                    text-align: left;
+                }
+
+                .project-buttons__holder {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    
+                    a {
+                        padding: 10px 10px;
+                        border-radius: 10px;
+                        background-color: c.$purple-primary;
+                        color: white;
+                        box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+                    }
                 }
             }
         }

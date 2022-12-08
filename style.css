@@ -310,26 +310,44 @@ header .header-content__holder .desktop-navigation__holder ul {
 .projects-content__holder {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 15px;
 }
+.projects-content__holder h2, .projects-content__holder span {
+  display: block;
+  text-align: center;
+}
+.projects-content__holder hr {
+  width: 5%;
+  border: 2px solid #8CA861;
+  margin-bottom: 30px;
+}
+.projects-content__holder .project-previews__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.projects-content__holder .project-previews__holder .project-preview__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 @media screen and (min-width: 768px) {
-  .projects-content__holder .project-preview__container {
-    display: flex;
+  .projects-content__holder .project-previews__holder .project-preview__container {
+    flex-direction: row;
     align-items: center;
     gap: 75px;
   }
 }
-@media screen and (min-width: 768px) {
-  .projects-content__holder .project-preview__container--reverse {
-    flex-direction: row-reverse;
-  }
-}
-.projects-content__holder .project-preview__container--img {
+.projects-content__holder .project-previews__holder .project-preview__container--img {
   flex: 0 1 60%;
 }
-.projects-content__holder .project-preview__container--text {
+.projects-content__holder .project-previews__holder .project-preview__container--img img {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.projects-content__holder .project-previews__holder .project-preview__container--text {
   flex: 0 1 40%;
   display: flex;
   flex-direction: column;
@@ -338,17 +356,17 @@ header .header-content__holder .desktop-navigation__holder ul {
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
-  .projects-content__holder .project-preview__container--text {
+  .projects-content__holder .project-previews__holder .project-preview__container--text {
     align-items: flex-start;
     text-align: left;
   }
 }
-.projects-content__holder .project-preview__container--text .project-buttons__holder {
+.projects-content__holder .project-previews__holder .project-preview__container--text .project-buttons__holder {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-.projects-content__holder .project-preview__container--text .project-buttons__holder a {
+.projects-content__holder .project-previews__holder .project-preview__container--text .project-buttons__holder a {
   padding: 10px 10px;
   border-radius: 10px;
   background-color: #7D84B2;
