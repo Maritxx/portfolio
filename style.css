@@ -148,9 +148,12 @@ h3 {
 
 /*Header*/
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   background-color: #8CA861;
   font-family: "Rubik", "Arial", sans-serif;
-  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
 header .header-content__holder {
   display: flex;
@@ -186,44 +189,48 @@ header .header-content__holder .desktop-navigation__holder ul {
 }
 
 /*Hero Intro section*/
-.hero-content__holder {
+.hero-intro__section {
+  background: linear-gradient(135deg, #f8f8ff 25%, transparent 25%) -50px 0/100px 100px, linear-gradient(225deg, rgba(248, 248, 255, 0.5) 25%, transparent 25%) -50px 0/100px 100px, linear-gradient(315deg, #f8f8ff 25%, transparent 25%) 0 0/100px 100px, linear-gradient(45deg, rgba(248, 248, 255, 0.5) 25%, #ffffff 25%) 0 0/100px 100px;
+  background-color: #ffffff;
+}
+.hero-intro__section .hero-content__holder {
   position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 85px 15px 15px 15px;
 }
 @media screen and (min-width: 768px) {
-  .hero-content__holder {
+  .hero-intro__section .hero-content__holder {
     display: flex;
     gap: 30px;
   }
 }
-.hero-content__holder--text {
+.hero-intro__section .hero-content__holder--text {
   flex: 0 1 50%;
   display: flex;
   align-items: center;
 }
-.hero-content__holder--text .hero-name {
+.hero-intro__section .hero-content__holder--text .hero-name {
   display: inline-block;
   font-weight: 500;
   width: 100%;
 }
-.hero-content__holder--text .hero-title {
+.hero-intro__section .hero-content__holder--text .hero-title {
   font-weight: 500;
   animation: title-color-change 5s linear infinite;
 }
-.hero-content__holder--text .hero-title--one {
+.hero-intro__section .hero-content__holder--text .hero-title--one {
   --color1: #7d84b2;
   --color2: #8ca861;
   --color3: #fed766;
 }
-.hero-content__holder--text .hero-title--two {
+.hero-intro__section .hero-content__holder--text .hero-title--two {
   --color1: #fed766;
   --color2: #7d84b2;
   --color3: #8ca861;
 }
-.hero-content__holder--img {
+.hero-intro__section .hero-content__holder--img {
   flex: 0 1 50%;
 }
 
