@@ -56,7 +56,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: c.$green-primary;
+    background-color: rgba(125,132,178,0.6);
     font-family: c.$rubik;
     box-shadow: 0 10px 100px rgb(0 0 0 / 10%);
 
@@ -379,3 +379,13 @@ header {
 }
 
 /*Footer*/
+footer {
+    background: url("img/patternpad.svg");
+    border-top: 5px solid c.$green-primary;
+
+    .footer-content__holder {
+        @include c.sectionWidth(1200px);
+        padding: 15px;
+        text-align: center;
+    }
+}

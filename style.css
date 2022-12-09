@@ -151,7 +151,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: #8CA861;
+  background-color: rgba(125, 132, 178, 0.6);
   font-family: "Rubik", "Arial", sans-serif;
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
@@ -440,5 +440,17 @@ header .header-content__holder .desktop-navigation__holder ul {
 }
 
 /*Footer*/
+footer {
+  background: url("img/patternpad.svg");
+  border-top: 5px solid #8CA861;
+}
+footer .footer-content__holder {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
