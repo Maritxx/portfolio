@@ -40,6 +40,7 @@ figcaption {
 button {
   outline: 0;
   color: inherit;
+  cursor: pointer;
 }
 
 q {
@@ -105,6 +106,18 @@ body {
   display: block;
   max-width: 100%;
   width: 100%;
+}
+
+.button__purple {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: #7D84B2;
+  transition: 0.4s box-shadow ease-in-out;
+}
+.button__purple:hover {
+  box-shadow: 0px 0px 0px 2.5px white inset, 0px 0px 0px 5px #7D84B2;
 }
 
 .title__hr {
@@ -262,14 +275,6 @@ header .header-content__holder .desktop-navigation__holder ul {
     flex: 0 1 60%;
   }
 }
-.about__section .about-content__holder .about-info__holder--text .button {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  background-color: #7D84B2;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
 @media screen and (min-width: 768px) {
   .about__section .about-content__holder .about-info__holder--skills {
     flex: 0 1 40%;
@@ -384,11 +389,7 @@ header .header-content__holder .desktop-navigation__holder ul {
   gap: 15px;
 }
 .projects-content__holder .project-previews__holder .project-preview__container--text .project-buttons__holder a {
-  padding: 10px 10px;
-  border-radius: 10px;
-  background-color: #7D84B2;
   color: white;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /*Contact Section*/
@@ -432,11 +433,6 @@ header .header-content__holder .desktop-navigation__holder ul {
 .contact__section .contact-content__holder .contact__form button {
   display: inline-flex;
   align-self: flex-start;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  background-color: #7D84B2;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 /*Footer*/
