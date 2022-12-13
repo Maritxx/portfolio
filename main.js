@@ -7,4 +7,9 @@ function toggleMobileMenu() {
     dropdownMenu.classList.toggle("expanded-dropdown");
 }
 
+const navButtons = Array.from(document.getElementsByClassName("button__nav"));
+navButtons.forEach((button) => {
+    button.addEventListener("click", toggleMobileMenu);
+})
+
 toggleButton.addEventListener("click", toggleMobileMenu);
