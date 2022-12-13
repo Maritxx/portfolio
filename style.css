@@ -179,6 +179,28 @@ header .header-content__holder {
     padding: 15px;
   }
 }
+header .header-content__holder a.button__nav {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 0.15em;
+}
+header .header-content__holder a.button__nav::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  bottom: -2px;
+  left: 10px;
+  position: absolute;
+  background-color: #FED766;
+  transition: 0.4s width ease-in-out;
+}
+header .header-content__holder a.button__nav:hover {
+  font-weight: 500;
+}
+header .header-content__holder a.button__nav:hover::after {
+  width: calc(100% - 20px);
+}
 header .header-content__holder .header-logo__container {
   display: flex;
   align-items: center;
@@ -243,12 +265,16 @@ header .header-content__holder .mobile-navigation__holder .mobile-navigation__dr
   opacity: 0;
 }
 header .header-content__holder .mobile-navigation__holder .mobile-navigation__dropdown nav {
-  padding: 120px 0px 0px;
+  padding: 115px 0px 0px;
   width: 175px;
   text-align: right;
 }
 header .header-content__holder .mobile-navigation__holder .mobile-navigation__dropdown nav li {
-  padding: 10px 0px;
+  padding: 5px 0px;
+}
+header .header-content__holder .mobile-navigation__holder .mobile-navigation__dropdown nav li a.button__nav::after {
+  background-color: black;
+  bottom: -1px;
 }
 header .header-content__holder .mobile-navigation__holder .mobile-navigation__dropdown.expanded-dropdown {
   width: 250px;
@@ -267,7 +293,7 @@ header .header-content__holder .desktop-navigation__holder {
 }
 header .header-content__holder .desktop-navigation__holder ul {
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 /*Hero Intro section*/

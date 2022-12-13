@@ -85,6 +85,32 @@ header {
             padding: 15px;
         }
 
+        a.button__nav {
+            position: relative;
+            display: inline-block;
+            padding: 5px 10px;
+            letter-spacing: 0.15em;
+
+            &::after {
+                content: "";
+                width: 0px;
+                height: 2px;
+                bottom: -2px;
+                left: 10px;
+                position: absolute;
+                background-color: c.$yellow-primary;
+                transition: 0.4s width ease-in-out;
+            }
+
+            &:hover{
+                font-weight: 500;
+
+                &::after {
+                    width: calc(100% - 20px);
+                }
+            }
+        }
+
         .header-logo__container {
             display: flex;
             align-items: center;
@@ -161,15 +187,16 @@ header {
                 opacity: 0;
 
                 nav {
-                    padding: 120px 0px 0px;
+                    padding: 115px 0px 0px;
                     width: 175px;
                     text-align: right;
 
                     li {
-                        padding: 10px 0px;
+                        padding: 5px 0px;
 
-                        a {
-                            //For hover styling
+                        a.button__nav::after {
+                            background-color: black;
+                            bottom: -1px;
                         }
                     }
                 }
@@ -193,7 +220,7 @@ header {
 
             ul {
                 display: flex;
-                gap: 30px;
+                gap: 15px;
             }
         }
     }
