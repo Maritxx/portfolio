@@ -174,6 +174,11 @@ header .header-content__holder {
   align-items: center;
   padding: 15px 45px;
 }
+@media screen and (max-width: 767px) {
+  header .header-content__holder {
+    padding: 15px;
+  }
+}
 header .header-content__holder .header-logo__container {
   display: flex;
   align-items: center;
@@ -211,10 +216,11 @@ header .header-content__holder .desktop-navigation__holder ul {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 85px 15px 15px 15px;
+  padding: 115px 15px 15px 15px;
 }
 @media screen and (min-width: 768px) {
   .hero-intro__section .hero-content__holder {
+    padding: 85px 15px 15px 15px;
     display: flex;
     gap: 30px;
   }
@@ -223,6 +229,13 @@ header .header-content__holder .desktop-navigation__holder ul {
   flex: 0 1 50%;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .hero-intro__section .hero-content__holder--text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+  }
 }
 .hero-intro__section .hero-content__holder--text .hero-name {
   display: inline-block;
@@ -245,6 +258,12 @@ header .header-content__holder .desktop-navigation__holder ul {
 }
 .hero-intro__section .hero-content__holder--img {
   flex: 0 1 50%;
+}
+@media screen and (max-width: 767px) {
+  .hero-intro__section .hero-content__holder--img {
+    max-width: 75%;
+    margin: 30px auto 0;
+  }
 }
 
 /*About Section*/
@@ -273,6 +292,11 @@ header .header-content__holder .desktop-navigation__holder ul {
 @media screen and (min-width: 768px) {
   .about__section .about-content__holder .about-info__holder--text {
     flex: 0 1 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__section .about-content__holder .about-info__holder--skills {
+    margin-top: 45px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -401,7 +425,12 @@ header .header-content__holder .desktop-navigation__holder ul {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 15px 15px 90px 15px;
+  padding: 15px 15px 50px 15px;
+}
+@media screen and (min-width: 768px) {
+  .contact__section .contact-content__holder {
+    padding: 15px 15px 90px 15px;
+  }
 }
 .contact__section .contact-content__holder h2, .contact__section .contact-content__holder span {
   display: block;
@@ -447,6 +476,11 @@ footer .footer-content__holder {
   margin: 0 auto;
   padding: 15px;
   text-align: center;
+}
+footer .footer-content__holder span {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
