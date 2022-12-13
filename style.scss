@@ -5,6 +5,10 @@
 
 
 /*Global Styles*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: c.$spectral;
 }
@@ -248,12 +252,40 @@ header {
         &--text {
             flex: 0 1 50%;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
 
             @include c.mobile-only {
                 text-align: center;
                 margin: 0 auto;
                 max-width: 500px;
+            }
+
+            .hero-socials__holder {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                border-top: 2px solid c.$green-primary;
+                margin-top: 25px;
+                gap: 15px;
+                
+                .social-icon__container {
+                    a {
+                        display: block;
+                        font-size: 25px;
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 5px; 
+
+                        &:hover {
+                            background-color: rgba(254, 215, 102, 0.4);
+                        }
+
+                        i {
+                            vertical-align: middle;
+                        }
+                    }
+                }
             }
 
             .hero-name {
@@ -284,7 +316,7 @@ header {
             flex: 0 1 50%;
 
             @include c.mobile-only {
-                max-width: 75%;
+                max-width: 400px;
                 margin: 30px auto 0;
             }
         }

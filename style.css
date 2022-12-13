@@ -98,6 +98,10 @@ ol, ul {
 }
 /*Importing stylesheets*/
 /*Global Styles*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Spectral", "Georgia", serif;
 }
@@ -318,7 +322,8 @@ header .header-content__holder .desktop-navigation__holder ul {
 .hero-intro__section .hero-content__holder--text {
   flex: 0 1 50%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .hero-intro__section .hero-content__holder--text {
@@ -326,6 +331,27 @@ header .header-content__holder .desktop-navigation__holder ul {
     margin: 0 auto;
     max-width: 500px;
   }
+}
+.hero-intro__section .hero-content__holder--text .hero-socials__holder {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-top: 2px solid #8CA861;
+  margin-top: 25px;
+  gap: 15px;
+}
+.hero-intro__section .hero-content__holder--text .hero-socials__holder .social-icon__container a {
+  display: block;
+  font-size: 25px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.hero-intro__section .hero-content__holder--text .hero-socials__holder .social-icon__container a:hover {
+  background-color: rgba(254, 215, 102, 0.4);
+}
+.hero-intro__section .hero-content__holder--text .hero-socials__holder .social-icon__container a i {
+  vertical-align: middle;
 }
 .hero-intro__section .hero-content__holder--text .hero-name {
   display: inline-block;
@@ -351,7 +377,7 @@ header .header-content__holder .desktop-navigation__holder ul {
 }
 @media screen and (max-width: 767px) {
   .hero-intro__section .hero-content__holder--img {
-    max-width: 75%;
+    max-width: 400px;
     margin: 30px auto 0;
   }
 }
