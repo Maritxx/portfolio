@@ -3,6 +3,7 @@
 @use "constants" as c;
 @use "animations" as a;
 
+
 /*Global Styles*/
 body {
     font-family: c.$spectral;
@@ -64,6 +65,7 @@ h3 {
     }
 }
 
+
 /*Header*/
 header {
     position: fixed;
@@ -98,6 +100,88 @@ header {
             @include c.tablet {
                 display: none;
             }
+
+            #nav-icon {
+                position: relative;
+                width: 30px;
+                height: 25px;
+                z-index: 3;
+                cursor: pointer;
+
+                span {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    left: 0;
+                    background-color: black;
+                    border-radius: 10px;
+                    transform: rotate(0deg);
+                    transition: .25s ease-in-out;
+
+                    &:nth-child(1) {
+                        top: 0px;
+                    }
+
+                    &:nth-child(2), &:nth-child(3) {
+                        top: 10px;
+                    }
+
+                    &:nth-child(4) {
+                        top: 20px;
+                    }
+                }
+
+                &.expanded-button {
+                    span:nth-child(1), span:nth-child(4) {
+                        top: 10px;
+                        left: 50%;
+                        width: 0%;
+                    }
+
+                    span:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+
+                    span:nth-child(3) {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            .mobile-navigation__dropdown {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 0px;
+                height: 0px;
+                margin: 30px 15px 15px 0px;
+                background: radial-gradient(circle, c.$yellow-primary, c.$yellow-primary);
+                border-radius: 50%;
+                opacity: 0;
+
+                nav {
+                    padding: 120px 0px 0px;
+                    width: 175px;
+                    text-align: right;
+
+                    li {
+                        padding: 10px 0px;
+
+                        a {
+                            //For hover styling
+                        }
+                    }
+                }
+
+                &.expanded-dropdown {
+                    width: 250px;
+                    height: 300px;
+                    transform: translate(30%, -30%);
+                    opacity: 1;
+                    transition: 0.6s opacity ease;
+                }
+            }
         }
 
         .desktop-navigation__holder {
@@ -114,6 +198,7 @@ header {
         }
     }
 }
+
 
 /*Hero Intro section*/
 .hero-intro__section {
@@ -284,6 +369,7 @@ header {
     }
 }
 
+
 /*Projects Section*/
 .projects-content__holder {
     @include c.sectionWidth(1080px);
@@ -347,6 +433,7 @@ header {
     }
 }
 
+
 /*Contact Section*/
 .contact__section {
     background-color: c.$offwhite-bg;
@@ -396,6 +483,7 @@ header {
         }
     }
 }
+
 
 /*Footer*/
 footer {
