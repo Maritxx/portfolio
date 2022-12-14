@@ -606,7 +606,7 @@ header .header-content__holder .desktop-navigation__holder ul {
 
 /*Footer*/
 footer {
-  background: url("img/patternpad.svg");
+  background: url("img/footer-bg.svg");
   border-top: 5px solid #8CA861;
 }
 footer .footer-content__holder {
