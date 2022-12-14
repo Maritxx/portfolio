@@ -565,6 +565,10 @@ header {
                 display: inline-flex;
                 align-self: flex-start;
             }
+
+            #form-submit__message {
+                font-weight: 500;
+            }
         }
     }
 }

@@ -603,6 +603,9 @@ header .header-content__holder .desktop-navigation__holder ul {
   display: inline-flex;
   align-self: flex-start;
 }
+.contact__section .contact-content__holder .contact__form #form-submit__message {
+  font-weight: 500;
+}
 
 /*Footer*/
 footer {
