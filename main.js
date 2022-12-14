@@ -5,6 +5,12 @@ function toggleMobileMenu() {
 
     toggleButton.classList.toggle("expanded-button");
     dropdownMenu.classList.toggle("expanded-dropdown");
+
+    if (toggleButton.classList.contains("expanded-button")) {
+        toggleButton.setAttribute("aria-expanded", true);
+    } else {
+        toggleButton.setAttribute("aria-expanded", false)
+    }
 }
 
 const navButtons = Array.from(document.getElementsByClassName("button__nav"));

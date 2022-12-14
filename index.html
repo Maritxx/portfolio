@@ -30,14 +30,14 @@
             </div>
 
             <div class="mobile-navigation__holder">
-                <div id="nav-icon" aria-label="Open navigation menu">
+                <button id="nav-icon" aria-controls="main-menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
                 <div class="mobile-navigation__dropdown" id="nav-dropdown">
-                    <nav>
+                    <nav id="main-menu" aria-label="Main menu">
                         <ul>
                             <li><a class="button__nav" href="#home">Home</a></li>
                             <li><a class="button__nav" href="#about">About</a></li>
@@ -71,17 +71,17 @@
                     </h1>
                     <div class="hero-socials__holder">
                         <div class="social-icon__container">
-                            <a href="#" target="_blank" aria-label="Link to Marit's LinkedIn page">
+                            <a href="https://www.linkedin.com/in/marit-de-vries-14709a24b/" target="_blank" aria-label="Link to Marit's LinkedIn page">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                         <div class="social-icon__container">
-                            <a href="#" target="_blank" aria-label="Link to Marit's Github page">
+                            <a href="https://github.com/Maritxx" target="_blank" aria-label="Link to Marit's Github page">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </div>
                         <div class="social-icon__container">
-                            <a href="mailto:maritdevries1@live.nl" target="_blank">
+                            <a href="mailto:maritdevries1@live.nl" target="_blank" aria-label="Link to send Marit an email">
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
                         </div>
@@ -94,7 +94,8 @@
             <img src="img/wave.svg" alt="" class="responsiveImg">
         </section>
 
-        <section class="about__section" id="about">
+        <section class="about__section">
+            <a class="section__anchor" id="about"></a>
             <div class="about-content__holder">
                 <h2>About</h2>
                 <div class="about-info__holder">
@@ -161,7 +162,8 @@
             <img src="img/wavebottom.svg" alt="" class="responsiveImg">
         </section>
 
-        <section class="projects__section" id="projects">
+        <section class="projects__section">
+            <a class="section__anchor" id="projects"></a>
             <div class="projects-content__holder">
                 <h2>Projects</h2>
                 <hr class="title__hr">
@@ -220,7 +222,8 @@
             <img src="img/waveproject.svg" alt="" class="responsiveImg">
         </section>
 
-        <section class="contact__section" id="contact">
+        <section class="contact__section">
+            <a class="section__anchor" id="contact"></a>
             <div class="contact-content__holder">
                 <h2>Contact</h2>
                 <hr class="title__hr">

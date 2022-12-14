@@ -19,6 +19,13 @@ body {
     width: 100%;
 }
 
+.section__anchor {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    top: -70px;
+}
+
 .button__purple {
     display: inline-block;
     padding: 10px;
@@ -124,6 +131,10 @@ header {
                 max-width: 40px;
                 max-height: 40px;
             }
+
+            .header-logo__text {
+                font-weight: 500;
+            }
         }
 
         .mobile-navigation__holder {
@@ -136,6 +147,7 @@ header {
                 width: 30px;
                 height: 25px;
                 z-index: 3;
+                background-color: inherit;
                 cursor: pointer;
 
                 span {
@@ -351,6 +363,16 @@ header {
 
                 @include c.tablet {
                     flex: 0 1 60%;
+                }
+
+                p a {
+                    font-weight: 500;
+                    font-style: italic;
+                    color: c.$green-primary;
+
+                    &:hover {
+                        font-weight: 700;
+                    }
                 }
             }
 

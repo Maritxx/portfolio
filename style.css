@@ -112,6 +112,13 @@ body {
   width: 100%;
 }
 
+.section__anchor {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -70px;
+}
+
 .button__purple {
   display: inline-block;
   padding: 10px;
@@ -214,6 +221,9 @@ header .header-content__holder .header-logo__container--img {
   max-width: 40px;
   max-height: 40px;
 }
+header .header-content__holder .header-logo__container .header-logo__text {
+  font-weight: 500;
+}
 @media screen and (min-width: 768px) {
   header .header-content__holder .mobile-navigation__holder {
     display: none;
@@ -224,6 +234,7 @@ header .header-content__holder .mobile-navigation__holder #nav-icon {
   width: 30px;
   height: 25px;
   z-index: 3;
+  background-color: inherit;
   cursor: pointer;
 }
 header .header-content__holder .mobile-navigation__holder #nav-icon span {
@@ -414,6 +425,14 @@ header .header-content__holder .desktop-navigation__holder ul {
   .about__section .about-content__holder .about-info__holder--text {
     flex: 0 1 60%;
   }
+}
+.about__section .about-content__holder .about-info__holder--text p a {
+  font-weight: 500;
+  font-style: italic;
+  color: #8CA861;
+}
+.about__section .about-content__holder .about-info__holder--text p a:hover {
+  font-weight: 700;
 }
 @media screen and (max-width: 767px) {
   .about__section .about-content__holder .about-info__holder--skills {
